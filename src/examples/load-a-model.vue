@@ -9,6 +9,8 @@
 import { nextTick, onMounted, ref } from "vue";
 const vueRef = ref<any>(null);
 onMounted(() => {
+  console.log(vueRef);
+  console.log(vueRef.value);
   console.log(vueRef.value.camera);
   // console.log(vue2Ref.value);
   vueRef.value.camera.fov = 90

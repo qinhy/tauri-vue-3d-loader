@@ -17,8 +17,8 @@ import {
   PointLight,
   HemisphereLight,
   DirectionalLight,
-  LinearEncoding,
-  sRGBEncoding,
+  // LinearEncoding,
+  // sRGBEncoding,
   Texture,
   TextureLoader,
   AnimationMixer,
@@ -362,9 +362,9 @@ function init() {
     renderer = new WebGLRenderer(options);
     // renderer.hadowMapEnabled = true
     renderer.shadowMap.enabled = true;
-    const encoding =
-      outputEncoding === "linear" ? LinearEncoding : sRGBEncoding;
-    renderer.outputEncoding = encoding;
+    // const encoding = 
+    //   outputEncoding === "linear" ? LinearEncoding : sRGBEncoding;
+    // renderer.outputEncoding = encoding;
   }
 
   if (!controls || Object.keys(controls).length <= 0) {
